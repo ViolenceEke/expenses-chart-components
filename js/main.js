@@ -7,14 +7,14 @@ const data = database;
 const barChart = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: data.map(index => {
-            return index.day
-        }),
+        labels: data.map(index =>
+            index.day
+        ),
         datasets: [
             {
-                data: data.map(index => {
-                    return index.amount
-                }),
+                data: data.map(index =>
+                    index.amount
+                ),
                 backgroundColor: [
                     'hsl(10, 79%, 65%)',
                     'hsl(10, 79%, 65%)',
